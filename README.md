@@ -6,7 +6,7 @@ This repository contains training and evaluation code for battery state-of-healt
 The project provides four experimental workflows:
 |Workflow|Purpose|Models|
 |---|---|---|
-|MIT benchmark|Evaluate SOH tracking across three MIT batches with fixed battery-level splits and three random seeds.|PINN, MLP_NoPhysics, LSTM, CNN, Transformer|
+|MIT benchmark|Evaluate SOH tracking across three MIT batches with fixed battery-level splits and three random seeds.|PINN, LSTM, CNN, Transformer|
 |Source pretraining|Train source models on MIT Batch 1 for subsequent adaptation to the 50 Ah cell.|PINN, LSTM, CNN, Transformer|
 |Sparse target adaptation|Adapt source models using a small number of labeled 50 Ah cycles and evaluate the remaining trajectory.|PINN, LSTM, CNN, Transformer|
 |Multi-step forecasting|Train using an initial cycle interval, freeze the models, and predict SOH 1, 10, and 50 cycles ahead.|PINN, LSTM, CNN, Transformer|
