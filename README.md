@@ -121,9 +121,6 @@ The MIT benchmark PINN and the 50 Ah transfer PINN use separate implementations:
 
 The 50 Ah experiments use one physical target cell. Multiple cycles, overlapping forecast origins, or repeated random seeds do not establish performance across independent target cells. Results remain conditional on the recorded data splits, preprocessing, and future-input assumptions.
 
-### Reproduction status
-
-The recorded packaging checks reloaded 45 MIT benchmark models and eight 50 Ah target models, reproduced their predictions, and checked required inputs and code syntax. Full retraining was not repeated during packaging. See [VERIFICATION.json](VERIFICATION.json) for the recorded scope and numerical differences, and [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) for code provenance.
 
 ## 简体中文
 
@@ -197,6 +194,3 @@ MIT 的 `all` 包含五个模型；源域预训练的 `all` 包含 PINN、LSTM�
 
 MIT 基准与 50 Ah 迁移采用各自的网络实现，主干分别为 8 × 64 和 12 × 96；输入和损失函数应结合对应流程解释。50 Ah 实验来自一块物理电池，多循环记录、重叠预测起点和重复随机种子不等同于独立电池验证。
 
-已有核验
-
-代码整理时已重新加载 45 组 MIT 基准模型和 8 组 50 Ah 目标模型，完成预测复算、必要输入和代码语法检查；整理过程未重新执行全量训练。核验范围与误差见 [VERIFICATION.json](VERIFICATION.json)，代码来源和哈希见 [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json)。
